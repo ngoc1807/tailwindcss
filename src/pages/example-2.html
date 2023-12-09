@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./../../dist/output.css" />
+
+  <body class="p-5">
+    <!-- <div class="max-w-[1140px] mx-auto flex items-center">
+      <div class="w-full max-w-[550px]">
+        <h1 class="text-[50px] font-medium text-[#0B132A] mb-[50px]">
+          Want anything to be easy with <strong>Lasles VPN</strong>
+        </h1>
+
+        <p class="text-[#4F56655] mb-[20px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          recusandae tempora alias, impedit enim doloribus obcaecati eum
+          voluptatibus eaque explicabo qui quos. Illo saepe, deserunt cum ex
+          voluptate ratione dolor.
+        </p>
+
+        <a
+          href="#"
+          class="inline-block font-bold bg-[#f53838] py-3 px-5 rounded-2xl text-white w-full max-w-[250px] text-center"
+        >
+          Get Started
+        </a>
+      </div>
+
+      <div class="pl-[20px]">
+        <img src="https://picsum.photos/500/500" alt="" />
+      </div>
+    </div>
+
+    <label for="toggle" class="inline-block cursor-pointe toggle-switch">
+      <input
+        type="checkbox"
+        name=""
+        id="toggle"
+        class="hidden darkmode-input peer"
+      />
+      <div
+        class="transition-colors p-[5px] w-[80px] h-[40px] border border-[#ccc] peer-checked:bg-[#6a5af9] rounded-full fixed right-5 bottom-5 z-50"
+      ></div>
+      <div
+        class="w-7 h-7 rounded-full bg-[#ccc] peer-checked:translate-x-7 peer-checked:bg-[#ffff] transition-all fixed right-[60px] bottom-[26px] z-[51]"
+      ></div>
+    </label> -->
+
+    <div class="grid-layout">
+      <!-- <div
+      class="grid auto-cols-[90%] grid-flow-col overflow-x-auto scroll-snap-mandatory snap-always gap-x-5"
+    > -->
+      <div class="h-[200px] snap-start">
+        <img
+          src="https://picsum.photos/300/200"
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="h-[200px] snap-start">
+        <img
+          src="https://picsum.photos/300/200"
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="h-[200px] snap-start">
+        <img
+          src="https://picsum.photos/300/200"
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="h-[200px] snap-start">
+        <img
+          src="https://picsum.photos/300/200"
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+    </div>
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+
+  <!-- <script>
+    const toggleSwitch = document.querySelector(
+      '.toggle-switch input[type="checkbox"]'
+    );
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.setAttribute("class", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+        document.documentElement.setAttribute("class", "light");
+      }
+    }
+
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    // Whenever the user explicitly chooses light mode
+    localStorage.theme = "light";
+
+    // Whenever the user explicitly chooses dark mode
+    localStorage.theme = "dark";
+
+    // Whenever the user explicitly chooses to respect the OS preference
+    localStorage.removeItem("theme");
+
+    toggleSwitch.addEventListener("change", switchTheme);
+  </script> -->
+</html>

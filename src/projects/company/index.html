@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./../../../dist/projects/company.css" />
+  <body>
+    <!-- header -->
+    <header
+      class="sticky top-0 left-0 min-h-[100px] w-full z-50 box-shadow-custom bg-white"
+    >
+      <div class="flex max-w-[1280px] mx-auto px-[15px] lg:px-0">
+        <!-- logo  -->
+        <div class="logo min-h-[100px] flex items-center">
+          <img
+            src="./images/logo.png"
+            class="max-w-none md:max-w-auto"
+            alt=""
+          />
+        </div>
+        <div class="menu mr-auto grow hidden md:block">
+          <ul class="flex justify-end h-full">
+            <li class="w-max h-full relative active">
+              <a
+                href="#home"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Home
+              </a>
+            </li>
+            <li class="w-max h-full relative">
+              <a
+                href="#works"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Works
+              </a>
+            </li>
+
+            <li class="w-max h-full relative">
+              <a
+                href="#"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Services
+              </a>
+            </li>
+
+            <li class="w-max h-full relative">
+              <a
+                href="#"
+                class="relative whitespace-nowrap font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Our customer
+              </a>
+            </li>
+
+            <li class="w-max h-full relative">
+              <a
+                href="#"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Team
+              </a>
+            </li>
+
+            <li class="w-max h-full relative">
+              <a
+                href="#"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Career
+              </a>
+            </li>
+
+            <li class="w-max h-full relative">
+              <a
+                href="#"
+                class="relative font-medium h-full w-max leading-[16px] ml-[32px] flex items-center"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- toggle -->
+        <div class="toogle grow md:grow-0">
+          <div class="w-max h-full relative hidden md:block">
+            <a
+              href="#"
+              class="relative font-medium h-full leading-[16px] ml-[32px] flex items-center"
+            >
+              <ion-icon class="text-[24px]" name="search-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="w-max h-full md:hidden flex ml-auto items-center">
+            <label
+              for="checkbox-siderbar"
+              class="cursor-pointer border border-colors relative p-2 flex items-center rounded-xl"
+            >
+              <ion-icon class="text-[24px]" name="list-outline"></ion-icon>
+            </label>
+
+            <input class="peer hidden" type="checkbox" id="checkbox-siderbar" />
+
+            <div
+              class="peer-checked:ml-0 -ml-[300px] duration-700 transition-all sidebar bg-white w-[230px] h-screen absolute top-0 left-0 z-[60] border border-left-[#333333]"
+            >
+              <div class="siderbar-header">
+                <ul>
+                  <li class="flex justify-between items-center font-medium">
+                    <a href="#" class="text-px"> Home </a>
+                    <label
+                      class="close-button flex items-center"
+                      for="checkbox-siderbar"
+                    >
+                      <ion-icon
+                        class="text-[30px]"
+                        name="close-outline"
+                      ></ion-icon>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-menu"></div>
+            </div>
+            <label
+              for="checkbox-siderbar"
+              class="peer-checked:ml-0 -ml-[100%] duration-500 transition-all siderbar-mark inset-0 h-screen w-full absolute bg-[#666666] z-[59]"
+            ></label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section
+      class="relative group banner h-[calc(100vh-100px)] bg-white w-full flex"
+    >
+      <div class="flex-1 overflow-hidden">
+        <div class="pl-[25%] h-full flex-1 flex-col">
+          <p
+            class="h-2/4 relative pb-4 flex items-end before:content before:w-2/5 before:absolute before:left-0 before:bottom-0 before:h-[3px] before:bg-[#414141]"
+          >
+            <span
+              class="text-[#414141] font-semibold text-[64px] group-hover:scale-150 origin-bottom-left transition-all duration-700"
+              >We code <br />
+              We deliver</span
+            >
+          </p>
+
+          <div
+            class="flex-1 pr-[40%] h-2/4 opacity-0 group-hover:opacity-100 transition ease-in-out duration-700 flex items-center leading-[24px] text-[#414141]"
+          >
+            Twiscode specializes in developing high-performing mobile and web
+            applications.
+          </div>
+        </div>
+      </div>
+      <div class="relative flex-1">
+        <div
+          class="relative transition-all ease-in-out duration-700 h-full origin-top-right group-hover:before:w-0 before:transition-all before:ease-in-out before:duration-700 before:content before:absolute before:bg-white before:h-full before:inset-x-0 before:left-0 before:w-1/5"
+        >
+          <img
+            class="w-full h-full -mr-[100px] group-hover:mr-0"
+            src="https://picsum.photos/500/1000"
+            alt="a"
+          />
+        </div>
+
+        <div
+          class="w-[calc(20%+80px)] -translate-x-[80px] absolute left-0 bottom-1/4 flex items-center bg-whitex flex-row-reverse"
+        >
+          <a
+            href="#"
+            class="button-banner2 grow bg-button justify-center border-left border-left-[#333333] flex items-center font-semibold text-white text-[18px] h-[80px] overflow-hidden hover:bg-[#414141] hover:bg-gradient-to-r transition-all duration-700"
+          >
+            Let’s Have a Coffe
+          </a>
+          <div
+            class="button-banner py-5 w-[80px] flex items-center bg-[#414141] h-[80px] overflow-hidden justify-center transition-all"
+          >
+            <ion-icon
+              name="arrow-forward-outline"
+              class="icon-button-banner text-[24px] text-white transition-all"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section class="relative max-w-[1000px] mx-auto bg-white">
+      <div class="flex min-h-[80vh] items-center">
+        <div class="flex-1 flex flex-wrap">
+          <div class="w-[50%]">
+            <div
+              class="aspect-square relative bg-white before:content-[''] before:absolute before:top-[50%] before:right-0 before:h-[3px] before:w-1/2 before:bg-[#414141] before:"
+            ></div>
+          </div>
+          <div class="w-[50%] relative">
+            <div class="aspect-square relative bg-button">
+              <div
+                class="absolute top-[40px] left-[26px] text-[#414141] font-semibold text-[24px] leading-[24px]]"
+              >
+                DISCUSS
+              </div>
+              <div
+                class="absolute bottom-[6px] right-[6px] text-[rgb(255,255,255)] opacity-50 font-semibold text-[100px] leading-[72px]] origin-bottom-right"
+              >
+                01
+              </div>
+            </div>
+          </div>
+          <div class="w-[50%] relative">
+            <div class="aspect-square relative bg-button-2">
+              <div
+                class="absolute top-[40px] left-[26px] text-[#414141] font-semibold text-[24px] leading-[24px]]"
+              >
+                PLANNING
+              </div>
+              <div
+                class="absolute bottom-[6px] right-[6px] text-[#E5E5E5] font-semibold text-[100px] leading-[72px]] origin-bottom-right"
+              >
+                02
+              </div>
+            </div>
+          </div>
+          <div class="w-[50%] relative">
+            <div class="aspect-square relative bg-button-2">
+              <div
+                class="absolute top-[40px] left-[26px] text-[#414141] font-semibold text-[24px] leading-[24px]]"
+              >
+                CODDING
+              </div>
+              <div
+                class="absolute bottom-[6px] right-[6px] text-[#E5E5E5] font-semibold text-[100px] leading-[72px]] origin-bottom-right"
+              >
+                03
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-center">
+          <div
+            class="pl-[20%] text-[#414141] font-semibold text-[64px] leading-[72px] pb-5"
+          >
+            How We Work?
+          </div>
+          <div
+            class="pl-[20%] pb-[50px] text-[18px] leading-[32px] text-[#9f9f9f]"
+          >
+            Let's discuss what projects you have in mind
+          </div>
+          <a
+            href="#"
+            class="ml-[20%] w-[170px] flex justify-center items-center h-[60px] text-white bg-[#414141] rounded-md text-[18px] font-weight:500 hover:border hover:border-[#414141] hover:bg-white hover:text-[#414141] transition-all duration-500"
+          >
+            More</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <section class="relative max-w-[1000px] mx-auto bg-white">
+      <div class="flex min-h-[50vh] items-center">
+        <div class="flex-1 flex flex-col justify-center">
+          <div
+            class="text-[#414141] font-semibold text-[64px] leading-[72px] pb-5"
+          >
+            Our Customers are our biggest fans
+          </div>
+          <div class="pb-[40px] text-[18px] leading-[32px] text-[#9f9f9f]">
+            We have helped startups around the globe as well as fortune 500
+            companies
+          </div>
+
+          <a
+            href="#"
+            class="text-button text-[18px] leading-[32px] font-medium"
+          >
+            See all
+          </a>
+        </div>
+        <div class="flex-1">
+          <div
+            class="pl-[10%] grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-5 md:gap-y-10 max-w-5xl px-[15px] mx-auto"
+          >
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="image aspect-square">
+                <img
+                  class="w-full h-full rounded-lg object-cover"
+                  src="https://picsum.photos/500/500"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section class="relative mx-auto bg-white mt-10">
+      <div class="flex min-h-[50vh] items-center">
+        <div class="flex-1 relative flex flex-wrap max-h-[600px]">
+          <div class="carousel w-full max-h-[500px] relative">
+            <div class="carousel-item relative h-full">
+              <img
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/500/500"
+              />
+
+              <div class="absolute">
+                <div
+                  class="pt-[30px] pr-[30px] text-right mb-[6px] text-[#fff] text-[48px] leading-[60px]"
+                >
+                  Mobile Application
+                </div>
+                <div class="text-right">
+                  Building mobile applications is never easy. P2P lending app ?
+                  Logistic App ? E-Commerce App ? We have done them all. Done
+                  them all well. Done them all fast. Our core strength is
+                  supercharging your mobile applications idea so that you can
+                  focus on the core business. Leave the keyboard-clacking to us.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex absolute right-[10px] bottom-[10px]">
+            <button class="">
+              <ion-icon
+                class="text-[24px]"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <button class="">
+              <ion-icon
+                class="text-[24px]"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-center">
+          <div
+            class="pl-[20%] text-[#414141] font-semibold text-[64px] leading-[72px] pb-5"
+          >
+            What we do?
+          </div>
+          <a
+            href="#"
+            class="pl-[20%] text-[20px] leading-[60px] text-[#414141] font-medium"
+          >
+            - Let's discuss
+          </a>
+          <a
+            href="#"
+            class="pl-[20%] text-[20px] leading-[60px] text-[#9F9F9F] font-medium"
+          >
+            - Let's discuss
+          </a>
+          <a
+            href="#"
+            class="pl-[20%] text-[20px] leading-[60px] text-[#9F9F9F] font-medium"
+          >
+            - Let's discuss
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      const headerLink = document.querySelectorAll('header.sticky .menu ul li');
+      for (const iterator of headerLink) {
+        iterator.addEventListener('click', function (e) {
+          for (const iterator of headerLink) {
+            iterator.className = iterator.className
+              .trim()
+              .replace('active', '');
+          }
+
+          if (!iterator.className.includes('active')) {
+            iterator.className += ' active';
+          } else {
+            iterator.className = iterator.className
+              .trim()
+              .replace(' active', '');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
